@@ -7,6 +7,7 @@ Designed with modularity, BhyatPOS includes views for Sales, Inventory, Dashboar
 ## Screenshots
 
 <p float="left">
-  <img src="screenshots/LOGINVIEW.png" alt="Login View" width="20%" />
-  <img src="screenshots/SALESVIEW.png" alt="Sales View" width="75%" />
+  <img src="screenshots/LOGINVIEW.png" alt="Login View" width="20%" style="border:1px solid #ccc; padding:4px; border-radius:4px;" />
+  <img src="screenshots/SALESVIEW.png" alt="Sales View" width="75%" style="border:1px solid #ccc; padding:4px; border-radius:4px;" />
 </p>
+
