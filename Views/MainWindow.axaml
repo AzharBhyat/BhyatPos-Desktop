@@ -1,0 +1,64 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:BhyatPos.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="clr-namespace:BhyatPos.Views;assembly=BhyatPos"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="BhyatPos.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="BhyatPos - Login">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid ColumnDefinitions="*, 5*">
+		<Border Classes="nav-panel" Grid.Column="0">
+			<StackPanel Margin="5">
+				<Image Source="{SvgImage /Assets/logo.svg}" HorizontalAlignment="Stretch" Margin="5"></Image>
+				<Separator Margin="5"></Separator>
+				<Button>
+					<StackPanel Orientation="Horizontal">
+						<Label FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf0db;"></Label>
+						<Label>Dashboard</Label>
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel Orientation="Horizontal">
+						<Label FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf543;"></Label>
+						<Label>Sales</Label>
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel Orientation="Horizontal">
+						<Label FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf474;"></Label>
+						<Label>Inventory</Label>
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel Orientation="Horizontal">
+						<Label FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf681;"></Label>
+						<Label>Reports</Label>
+					</StackPanel>
+				</Button>
+				<Button>
+					<StackPanel Orientation="Horizontal">
+						<Label FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf571;"></Label>
+						<Label>Invoice</Label>
+					</StackPanel>
+				</Button>
+			</StackPanel>
+		</Border>
+
+
+		<ContentControl Grid.Column="1">
+			<view:SalesView></view:SalesView>
+		</ContentControl>
+  
+	</Grid>
+
+</Window>

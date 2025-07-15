@@ -1,0 +1,108 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="using:BhyatPos.ViewModels"
+			 xmlns:model="using:BhyatPos.Models"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="BhyatPos.Views.SalesView"
+			 x:DataType="vm:SalesViewModel">
+	
+	<Grid ColumnDefinitions="6*, 2*">
+
+		<Grid RowDefinitions="Auto, *,Auto" Grid.Column="0" Background="{DynamicResource ChangeBackground}">
+
+			<Border Classes="product-search" Margin="25 10 25 10 ">
+				<Grid ColumnDefinitions="*,Auto">
+					<TextBox Grid.Column="0" HorizontalAlignment="Stretch" Watermark="Search Item..."></TextBox>
+					<Button FontFamily="{DynamicResource FontAwesomeSolid}" Grid.Column="1" Content="&#xf002;"></Button>
+				</Grid>
+			</Border>
+	
+			<Border Classes="" Grid.Row="1" Margin="15 0 15 0">
+				<DataGrid Margin="10" ItemsSource="{Binding SaleItems}">
+					<DataGrid.Columns>
+						<DataGridTextColumn Width="Auto" Header="Barcode"  Binding="{Binding Barcode}" IsReadOnly="True"/>
+						<DataGridTextColumn Width="2*"  Header="Name"  Binding="{Binding ProductName}" IsReadOnly="True"/>
+						<DataGridTextColumn Width="4*"  Header="Description"  Binding="{Binding Description}" IsReadOnly="True"/>
+						<DataGridTemplateColumn Width="Auto" Header="Quantity" IsReadOnly="False">
+							<DataGridTemplateColumn.CellTemplate>
+								<DataTemplate DataType="model:SaleItem">
+									<TextBlock Text="{Binding QuantitySold, StringFormat='{}{0}'}"
+									  VerticalAlignment="Center" HorizontalAlignment="Center" />
+								</DataTemplate>
+							</DataGridTemplateColumn.CellTemplate>
+							<DataGridTemplateColumn.CellEditingTemplate>
+								<DataTemplate DataType="model:SaleItem">
+									<NumericUpDown Value="{Binding QuantitySold}" ValueChanged="NumericUpDown_ValueChanged"
+									   FormatString="N0" Minimum="0" Maximum="120"
+									   HorizontalAlignment="Stretch"/>
+								</DataTemplate>
+							</DataGridTemplateColumn.CellEditingTemplate>
+						</DataGridTemplateColumn>
+
+						<DataGridTextColumn Width="Auto" Header="Unit Price"  Binding="{Binding PriceAtSale}" IsReadOnly="True"/>
+						<DataGridTextColumn Width="Auto" Header="Cat."  Binding="{Binding Category}" IsReadOnly="True"/>
+					</DataGrid.Columns>
+				</DataGrid>
+			</Border>
+			<!-- Row 2: Buttons -->
+			<StackPanel Grid.Row="2"
+						Orientation="Horizontal"
+						HorizontalAlignment="Center"
+						Margin="5"
+						Spacing="10">
+				<TextBox KeyDown="TextBox_KeyDown" Watermark="Barcode.... " Text="{Binding Barcode, Mode=TwoWay}" Width="250"></TextBox>
+				
+				
+				<!--<Button x:Name="addButton" Command="{Binding AddItemByBarcodeCommand}">Add</Button>-->
+			</StackPanel>
+		</Grid>
+
+
+		<Border Classes="payments-card" Grid.Column="1">
+			<StackPanel Classes="payments-panel">
+				<TextBlock Classes="panel-heading">Payments</TextBlock>
+				<Border Classes="payment-box" Margin="15 0 15 0">
+					<StackPanel>
+						<Grid>
+							<TextBlock HorizontalAlignment="Left">Total:</TextBlock>
+							<TextBlock Classes="payment-box-value-t" HorizontalAlignment="Right" Text="{Binding TotalPrice, Mode=TwoWay}"></TextBlock>
+						</Grid>
+						<Separator Margin="5" ></Separator>
+						<Grid>
+							<TextBlock HorizontalAlignment="Left">Total Due:</TextBlock>
+							<TextBlock Classes="payment-box-value-t" HorizontalAlignment="Right" Text="{Binding TotalDue, Mode=TwoWay}"></TextBlock>
+						</Grid>
+						<Separator></Separator>
+						<Grid>
+							<TextBlock HorizontalAlignment="Left">Change Due:</TextBlock>
+							<TextBlock Classes="payment-box-value-c" HorizontalAlignment="Right" Text="{Binding TotalChange, Mode=TwoWay}"></TextBlock>
+						</Grid>
+					</StackPanel>
+				</Border>
+				
+				<StackPanel Spacing="10" Margin="10">
+					<Grid ColumnDefinitions="Auto, *">
+						<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf53b; " Foreground="Green" FontSize="22" ></Label>
+						<NumericUpDown Grid.Column="1" Watermark="Cash.." Classes="payment-input" Value="{Binding CashTotal, Mode=TwoWay}" ></NumericUpDown>
+					</Grid>
+					<Grid ColumnDefinitions="Auto, *">
+						<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf09d; " Foreground="BlueViolet" FontSize="22" ></Label>
+							<NumericUpDown Grid.Column="1"  Watermark="Card.."  Classes="payment-input" Value="{Binding CardTotal, Mode=TwoWay}"  ></NumericUpDown>
+					</Grid>
+					<Grid ColumnDefinitions="Auto, *">
+						<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf19c; " Foreground="Purple" FontSize="22" ></Label>
+							<NumericUpDown Grid.Column="1" Watermark="EFT.."  Classes="payment-input" Value="{Binding EftTotal, Mode=TwoWay}"  ></NumericUpDown>
+					</Grid>
+				</StackPanel>
+				<Button Classes="complete-sale" Content="Complete Sale" Command="{Binding CompleteSaleCommand}"></Button>
+			
+				
+			</StackPanel>
+		</Border>
+	</Grid>
+
+
+</UserControl>
+

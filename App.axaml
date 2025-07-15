@@ -1,0 +1,36 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="BhyatPos.App"
+             xmlns:local="using:BhyatPos"
+             RequestedThemeVariant="Light">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+		<StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+		<StyleInclude Source="Styles/AppDefaultStyles.axaml"></StyleInclude>
+	</Application.Styles>
+
+	<Application.Resources>
+		<SolidColorBrush x:Key="CardBackground" Color="#FFFFFF"/>
+		<SolidColorBrush x:Key="SecondaryBackground" Color="#F5F5F5"/>
+		<SolidColorBrush x:Key="BorderBrush" Color="#E0E0E0"/>
+		<SolidColorBrush x:Key="PrimaryBrush" Color="#0078D4"/>
+		<SolidColorBrush x:Key="PrimaryForeground" Color="#FFFFFF"/>
+		<SolidColorBrush x:Key="TextForeground" Color="#333333"/>
+		<SolidColorBrush x:Key="ChangeBackground" Color="#f0f4f5"/>
+		<SolidColorBrush x:Key="CheckoutButton" Color="#16a34a"/>
+		
+		<LinearGradientBrush x:Key="Background" StartPoint="0%,50%" EndPoint="100%,50%">
+			<GradientStop Color="#e6f0fa" Offset="0.0"/>
+			<GradientStop Color="#c2d9f0" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<FontFamily x:Key="FontAwesomeSolid">/Assets/Fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid</FontFamily>
+		
+	</Application.Resources>
+</Application>

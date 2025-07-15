@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ESA\\Documents\\BhyatPos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\views\\loginwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:views\\loginwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\bhyatpos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:bhyatpos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\views\\salesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:views\\salesview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\styles\\appdefaultstyles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:styles\\appdefaultstyles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\views\\salesview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:views\\salesview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|c:\\users\\esa\\documents\\bhyatpos\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB8D0B2-956C-3140-E2A0-929C261D49D3}|BhyatPos.csproj|solutionrelative:services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 714,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-15T00:23:03.887Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BhyatPos",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\BhyatPos.csproj",
+              "RelativeDocumentMoniker": "BhyatPos.csproj",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\BhyatPos.csproj",
+              "RelativeToolTip": "BhyatPos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T20:46:21.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\LoginWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\LoginWindow.axaml",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\LoginWindow.axaml",
+              "RelativeToolTip": "Views\\LoginWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-15T20:40:49.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:39:54.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SalesView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\SalesView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\SalesView.axaml.cs",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\SalesView.axaml.cs",
+              "RelativeToolTip": "Views\\SalesView.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:06:08.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDefaultStyles.axaml",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Styles\\AppDefaultStyles.axaml",
+              "RelativeDocumentMoniker": "Styles\\AppDefaultStyles.axaml",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Styles\\AppDefaultStyles.axaml",
+              "RelativeToolTip": "Styles\\AppDefaultStyles.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-14T19:09:25.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalesView.axaml",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\SalesView.axaml",
+              "RelativeDocumentMoniker": "Views\\SalesView.axaml",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Views\\SalesView.axaml",
+              "RelativeToolTip": "Views\\SalesView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-15T16:44:14.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SalesService.cs",
+              "DocumentMoniker": "C:\\Users\\ESA\\Documents\\BhyatPos\\Services\\SalesService.cs",
+              "RelativeDocumentMoniker": "Services\\SalesService.cs",
+              "ToolTip": "C:\\Users\\ESA\\Documents\\BhyatPos\\Services\\SalesService.cs",
+              "RelativeToolTip": "Services\\SalesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:17:12.648Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

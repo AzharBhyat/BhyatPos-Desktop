@@ -1,0 +1,171 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="20" Width="500">
+
+			<StackPanel Spacing="10">
+				<Grid ColumnDefinitions="Auto, *">
+					<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf53b; " Foreground="Green" FontSize="30" ></Label>
+					<TextBox Grid.Column="1" Watermark="Cash.." FontSize="20" BorderBrush="LightGray" BorderThickness="1">
+					</TextBox>
+				</Grid>
+								<Grid ColumnDefinitions="Auto, *">
+					<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf09d; " Foreground="BlueViolet" FontSize="30" ></Label>
+					<TextBox Grid.Column="1" Watermark="Card.." FontSize="20" BorderBrush="LightGray" BorderThickness="1">
+					</TextBox>
+				</Grid>
+								<Grid ColumnDefinitions="Auto, *">
+					<Label	Grid.Column="0" FontFamily="{DynamicResource FontAwesomeSolid}" Content="&#xf19c; " Foreground="Purple" FontSize="30" ></Label>
+					<TextBox Grid.Column="1" Watermark="EFT.." FontSize="20" BorderBrush="LightGray" BorderThickness="1">
+					</TextBox>
+				</Grid>
+				
+			</StackPanel>
+				
+		</Border>
+	</Design.PreviewWith>
+	<!-- Add Styles Here -->
+
+	<Style Selector="Window">
+		<Setter Property="Background" Value="White"></Setter>
+	</Style>
+
+	<Style Selector="Border.payment-box TextBlock">
+		<Setter Property="FontWeight" Value="Normal"></Setter>
+		<Setter Property="FontSize" Value="16"></Setter>
+	</Style>
+	
+	<Style Selector="TextBlock.payment-box-value-t">
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+		<Setter Property="Foreground" Value="BlueViolet"></Setter>
+		<Setter Property="FontSize" Value="16"></Setter>
+	</Style>
+
+	<Style Selector="TextBlock.payment-box-value-c">
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+		<Setter Property="Foreground" Value="Green"></Setter>
+		<Setter Property="FontSize" Value="18"></Setter>
+	</Style>
+
+
+	<Style Selector="Border.payment-box">
+		<Setter Property="Background" Value="LightGray"></Setter>
+		<Setter Property="Padding" Value="10"></Setter>
+		<Setter Property="CornerRadius" Value="5"></Setter>
+		<Setter Property="BorderBrush" Value="LightGray"></Setter>
+		<Setter Property="BorderThickness" Value="1"></Setter>
+	</Style>
+
+
+	<Style Selector="Border.product-search">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BoxShadow" Value="0 0 2 2 LightGray"></Setter>
+		<Setter Property="CornerRadius" Value="5"></Setter>
+	</Style>
+
+	<Style Selector="Border.product-search Button">
+		<Setter Property="Background" Value="White"></Setter>
+	</Style>
+	
+	<Style Selector="Border.product-search TextBox">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BorderThickness" Value="0"></Setter>
+		<Setter Property="BorderBrush" Value="Transparent"></Setter>
+	</Style>
+	
+	<Style Selector="Border.nav-panel Button">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="Foreground" Value="Gray"></Setter>
+		<Setter Property="FontWeight" Value="Normal"></Setter>
+		<Setter Property="FontSize" Value="14"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+	</Style>
+
+	<Style Selector="Button.primary">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BorderThickness" Value="2"></Setter>
+		<Setter Property="BorderBrush" Value="LightGray"></Setter>
+		<Setter Property="Foreground" Value="Gray"></Setter>
+		<Setter Property="FontWeight" Value="Normal"></Setter>
+		<Setter Property="FontSize" Value="14"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+	</Style>
+
+	<Style Selector="Border.nav-panel Button:pointerover /template/ ContentPresenter">
+		<Setter Property="Background" Value="AliceBlue"></Setter>
+		<Setter Property="Foreground" Value="BlueViolet"></Setter>
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+	</Style>
+
+
+	<Style Selector="DataGrid">
+		<Setter Property="FontSize" Value="12"/>
+		<Setter Property="Background" Value="White"/>
+		<Setter Property="BorderBrush" Value="LightGray"/>
+		<Setter Property="BorderThickness" Value="1"></Setter>
+		<Setter Property="CornerRadius" Value="8"></Setter>
+		<Setter Property="GridLinesVisibility" Value="All"></Setter>
+	</Style>
+	
+	<Style Selector="DataGrid TextBlock">
+		<Setter Property="FontSize" Value="12"></Setter>
+	</Style>
+	
+	<Style Selector="TextBlock.total-due">
+		<Setter Property="Margin" Value="5"></Setter>
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+		<Setter Property="Foreground" Value="Black"></Setter>
+	</Style>
+	
+	<Style Selector="Button.complete-sale">
+		<Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+		<Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+		<Setter Property="Margin" Value="15"></Setter>
+		<Setter Property="Padding" Value="5"></Setter>
+		<Setter Property="Background" Value="BlueViolet"></Setter>
+		<Setter Property="Foreground" Value="White"></Setter>
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+		<Setter Property="FontSize" Value="16"></Setter>
+	</Style>
+	
+	<Style Selector="NumericUpDown.payment-input">
+		<Setter Property="ShowButtonSpinner" Value="False"></Setter>
+		<Setter Property="CornerRadius" Value="3"></Setter>
+		<Setter Property="BorderThickness" Value="1"/>
+		<Setter Property="BorderBrush" Value="LightGray"/>
+		<Setter Property="Background" Value="White"></Setter>
+	</Style>
+	
+	<Style Selector="TextBlock.panel-subhead">
+		<Setter Property="Foreground" Value="Black"></Setter>
+		<Setter Property="FontWeight" Value="Normal"></Setter>
+		<Setter Property="FontSize" Value="14"></Setter>
+	</Style>
+	
+	<Style Selector="TextBlock.panel-heading">
+		<Setter Property="Foreground" Value="Black"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Center"></Setter>
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+		<Setter Property="FontSize" Value="18"></Setter>
+		<Setter Property="Margin" Value="5"></Setter>
+		<Setter Property="Padding" Value="5"></Setter>
+	</Style>
+	
+	<Style Selector="Border.payments-card">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BoxShadow" Value="-1 1 2 LightGray"></Setter>
+	</Style>
+
+
+	<Style Selector="Border.grid-card">
+		<Setter Property="CornerRadius" Value="4"></Setter>
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BoxShadow" Value="0 0 1 1 LightGray"></Setter>
+	</Style>
+
+	<Style Selector="Border.nav-panel">
+		<Setter Property="Background" Value="White"></Setter>
+		<Setter Property="BoxShadow" Value="1 1 2 LightGray"></Setter>
+	</Style>
+	
+</Styles>
