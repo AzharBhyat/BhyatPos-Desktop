@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BhyatPos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ec7f6e8a27bc951721b94b653c1a3be9bbdc3d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77236c1714d0a0f2c51ecff8f9c7077345ad45a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BhyatPos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BhyatPos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
